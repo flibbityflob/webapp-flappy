@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Alice & Lois' Flappy Superman</title>
+    <link rel="stylesheet" href="../assets/style1.css"/>
+    <link rel="stylesheet" href="../lib/bootstrap.css"/>
+
+
+</head>
+<body>
+    <div class="container">
+         <div class="jumbotron">
+              <h1 ">Alice & Lois' Flappy Superman.</h1>
+              <p class="blue">Welcome to the best flappy bird game there is!</p>
+         </div>
+         <div class="row">
+              <div class="col-md-8">
+                  <p id="gameLink">
+                      <a href=""example.html">Click to restart!
+                          <img src="../assets/FlappySupermanScreenshot.png"
+                               class="img-responsive" />
+                      </a>
+                  </p>
+
+                  <div id="game"> </div>
+              </div>
+              <div class="col-md-4">
+                   <p>The highest scorers are:</p>
+                   <ul id="scoreBoard">
+                   </ul>
+              </div>
+         </div>
+
+        <!-- <div class="row">
+              <div class="col-md-6">
+                   <img src="../assets/screenshotStart.png"
+                         class="img-rounded img-responsive" />
+              </div>
+              <div class="col-md-6">
+                   <img src="../assets/screenshotOver.png"
+                         class="img-thumbnail img-responsive" />
+              </div>
+         </div>-->
+    </div>
+    <div id="greeting">
+        <form id="greeting-form" method="post" action="/score">
+            <div class="form-group">
+
+                <label for="fullName">What's your name</label>
+                <input type="text" id="fullName"
+                       name="fullName" class="form-control" placeholder="Alice" required>
+                <label for="email">What's your email?</label>
+                <input type="email" id="email" class="form-control"
+                       name="email" placeholder="alice@email.com" required>
+                <input type="hidden" id="score" name="score" value="0">
+            </div>
+            <button type="submit">OK</button>
+        </form>
+    </div>
+
+  <script src="../lib/jquery.js"></script>
+    <script src="../lib/phaser.min.js"></script>
+    <script src="../js/flappy.js"></script>
+</body>
+
+</html>
